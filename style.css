@@ -335,24 +335,24 @@ form button {
 }
 
 .carousel-item--1 .carousel-item__image {
-  background-image: url(/images/eandfpicture1.JPG);
+  background-image: url(images/eandfpicture1.JPG);
   background-size: cover;
 }
 
 .carousel-item--2 .carousel-item__image {
-  background-image: url(/images/eandfpicture7.JPG);
+  background-image: url(images/eandfpicture8.JPG);
   background-size: cover;
   background-position: 50% 25%;
 }
 
 .carousel-item--3 .carousel-item__image {
-  background-image: url(/images/eandfpicture2.JPG);
+  background-image: url(images/eandfpicture2.JPG);
   background-size: cover;
   background-position: 50% 25%;
 }
 
 .carousel-item--4 .carousel-item__image {
-  background-image: url(/images/eandfpicture8.JPG);
+  background-image: url(images/eandfpicture7.JPG);
   background-size: cover;
 }
 
