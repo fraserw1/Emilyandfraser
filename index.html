@@ -5,149 +5,125 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emily & Fraser</title>
-  <link rel="stylesheet" href="/style.css">
-  <link rel="icon" type="image/x-icon" href="/images/signatureinitialslower.jpeg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="images/effaviconsmall.jpeg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
 
 </head>
 <body>
-  <main class="carousel">
-    <section class="carousel__nav">
-      <span id="moveLeft" class="carousel__arrow">
-        <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
-        </svg>
-      </span>
-      <span id="moveRight" class="carousel__arrow" >
-        <svg class="carousel__icon"  width="24" height="24" viewBox="0 0 24 24">
-          <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
-        </svg>    
-      </span>
-    </section>
-    
-    <section class="carousel-item carousel-item--1">
-      <div class="carousel-item__image"></div>
-      <div class="carousel-item__info">
-        <nav>
-          <h6 class="underline">Home</h6>
-          <h6>RSVP</h6>
-          <h6>Schedule</h6>
-          <h6>Registry</h6>
-        </nav>
-        <div class="carousel-item__container">
-          <h2 class="carousel-item__subtitle">1. The invitation</h2>
-          <h1 class="carousel-item__title">Emily & Fraser</h1>
-          <p class="carousel-item__description">Together with their families, invite you to share in the celebration of their marriage.</p>
-          <a href="#" class="carousel-item__btn">Monday 24th April</a>
-        </div>
-      </div>
-    </section>
-    
-    <section class="carousel-item carousel-item--2">
-      <div class="carousel-item__image"></div>
-      <div class="carousel-item__info">
-        <nav>
-          <h6>Home</h6>
-          <h6 class="underline">RSVP</h6>
-          <h6>Schedule</h6>
-          <h6>Registry</h6>
-        </nav>
-        <aside class="menu">
-          <div class="close-RSVP">
-            <h1 class="carousel-item__title">RSVP</h1>
-            <button class="close-RSVP-btn rsvp-btn custom-btn btn-14" id="menuClose">X</button>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide carousel-item">
+          <div class="carousel-item__info">
+            <div class="carousel-item__container container1">
+              <h2 class="carousel-item__subtitle">1. The invitation</h2>
+              <h1 class="carousel-item__title">Emily & Fraser</h1>
+              <p class="carousel-item__description">Together with their families, invite you to share in the celebration of their marriage.</p>
+              <a href="#" class="carousel-date">Monday 24th April</a>
+            </div>
           </div>
-          <p class="carousel-item__description rsvp-description">Please enter your details below.</p>
-          <form id="contact" action="" method="post" data-netflify="true" class="carousel-item__description rsvp-description">
-            <fieldset>
-              <div class="form-names">
-                <label for="">Name</label>
-                <input placeholder="Your name" type="text" tabindex="1" required>
-                <br>
-                <label for="">Name</label>
-                <input placeholder="Additional name" type="text" tabindex="2" required>
-              </div>
-              <div class="form-radio">
-                <label for="radio-container" class="question">Will you be attending?</label>
-                <div class="radio-container">
-                  <input type="radio" id="radio1" name="radio-group" checked>
-                  <label for="radio1">Yes, I can't wait</label>
-                </div>
-                <div class="radio-container">
-                  <input type="radio" id="radio2" name="radio-group" checked>
-                  <label for="radio2">No and I'll regret it forever</label>
-                </div>
-              </div>
-              
-              <div class="form-extras">
-                <label for="">Email</label>
-                <input placeholder="Your Email Address" type="email" tabindex="3" required>
-                <div class="comments">
-                  <label for="">Optional</label>
-                  <textarea placeholder="Dietary requirements or questions?" tabindex="4" required></textarea>
-                </div>
-              </div>
-              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" class="rsvp-btn custom-btn btn-14">SUBMIT</button>
-            </fieldset>  
-          </form>
-        </aside>
-        <div class="carousel-item__container menu2">
-          <h2 class="carousel-item__subtitle">2. Your response</h2>
-          <h1 class="carousel-item__title">RSVP</h1>
-          <p class="carousel-item__description">Please let us know if you are able to join us by filling out the form.</p>
-          <button class="rsvp-btn custom-btn btn-14" id="menuButton">CLICK ME</button>
+          <div class="carousel-item__image inviteimg"></div>
         </div>
-      </div>
-    </section>
-    
-    <section class="carousel-item carousel-item--3">
-      <div class="carousel-item__image"></div>
-      <div class="carousel-item__info">
-        <nav>
-          <h6>Home</h6>
-          <h6>RSVP</h6>
-          <h6 class="underline">Schedule</h6>
-          <h6>Registry</h6>
-        </nav>
-        <div class="carousel-item__container container3">
-          <h2 class="carousel-item__subtitle">3. Order of the day</h2>
-          <h1 class="carousel-item__title scheduleh1">Schedule</h1>
-          <div class="carousel-item__description timeline">
-            <p><span>3pm - Church Service</span><br>Farm Street Church, Mayfair <a href="https://goo.gl/maps/6w7fBZGjEovwhwnDA" title="google map">Location</a><br>Please be seated early</p>
-            <hr>
-            <p><span>4:45pm - Reception</span><br>Beaufort House (Albert's Room), Kings Road, Chelsea <a href="https://goo.gl/maps/gdUWNCcmxRxJY194A" title="google map">Location</a></p>
-            <hr>
-            <p><span>6:30pm - Wedding Breakfast</span><br>We'll be sharing menu choices in due course</p>
-            <hr>
-            <p><span>8pm - Hit the Dancefloor</span><br>P-A-R-T-Y</p>
-            <hr>
-            <p><span>11:30pm - C'est Fini</span><br>Thank you and goodnight</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <section class="carousel-item carousel-item--4">
-      <div class="carousel-item__image"></div>
-      <div class="carousel-item__info">
-        <nav>
-          <h6>Home</h6>
-          <h6>RSVP</h6>
-          <h6>Schedule</h6>
-          <h6 class="underline">Registry</h6>
-        </nav>
-        <div class="carousel-item__container">
-          <h2 class="carousel-item__subtitle">4. Gifts</h2>
-          <h1 class="carousel-item__title">Registry</h1>
-          <p class="carousel-item__description">The most important thing is for you to be with us on our special day.<br>If, however, you would like to give us a gift, we'd love a small contribution towards our honeymoon on:</p>
-          <a href="https://prezola.com/wishlists/10267555/" class="custom-btn btn-14"><p>EMILY & FRASER'S GIFTLIST</p></a>
-        </div>
-      </div>
-    </section>
-  
-  </main>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <div class="swiper-slide carousel-item">
+          <div class="carousel-item__info">
+            <aside class="menu">
+              <div class="close-RSVP">
+                <h1 class="carousel-item__title">RSVP</h1>
+                <button class="close-RSVP-btn rsvp-btn custom-btn btn-14" id="menuClose">X</button>
+              </div>
+              <p class="carousel-item__description rsvp-description">Please enter your details below.</p>
+              <form id="contact" action="" method="post" data-netflify="true" class="carousel-item__description rsvp-description">
+                <fieldset>
+                  <div class="form-names">
+                    <label for="">Name</label>
+                    <input placeholder="Your name" type="text" tabindex="1" required>
+                    <br>
+                    <label for="">Name</label>
+                    <input placeholder="Additional name" type="text" tabindex="2" required>
+                  </div>
+                  <div class="form-radio">
+                    <label for="radio-container" class="question">Will you be attending?</label>
+                    <div class="radio-container">
+                      <input type="radio" id="radio1" name="radio-group" checked>
+                      <label for="radio1">Yes, I can't wait</label>
+                    </div>
+                    <div class="radio-container">
+                      <input type="radio" id="radio2" name="radio-group" checked>
+                      <label for="radio2">No and I'll regret it forever</label>
+                    </div>
+                  </div>
+                  
+                  <div class="form-extras">
+                    <label for="">Email</label>
+                    <input placeholder="Your Email Address" type="email" tabindex="3" required>
+                    <div class="comments">
+                      <label for="">Optional</label>
+                      <textarea placeholder="Dietary requirements or questions?" tabindex="4" required></textarea>
+                    </div>
+                  </div>
+                  <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" class="rsvp-btn custom-btn btn-14">SUBMIT</button>
+                </fieldset>  
+              </form>
+            </aside>
+            <div class="carousel-item__container menu2">
+              <h2 class="carousel-item__subtitle">2. Your response</h2>
+              <h1 class="carousel-item__title">RSVP</h1>
+              <p class="carousel-item__description">Please let us know if you are able to join us by filling out the form.</p>
+              <button class="rsvp-btn custom-btn btn-14" id="menuButton">CLICK ME</button>
+            </div>
+          </div>
+          <div class="carousel-item__image rsvpimg"></div>
+        </div>
+
+        <div class="swiper-slide carousel-item">
+          <div class="carousel-item__info">
+            <div class="carousel-item__container container3">
+              <h2 class="carousel-item__subtitle">3. Order of the day</h2>
+              <h1 class="carousel-item__title schedule1">Schedule</h1>
+              <div class="carousel-item__description timeline">
+                <p><span>3pm - Church Service</span><br>Farm Street Church, Mayfair <a href="https://goo.gl/maps/6w7fBZGjEovwhwnDA" title="google map">Location</a><br>Please be seated early</p>
+                <hr>
+                <p><span>4:45pm - Reception</span><br>Beaufort House (Albert's Room), Kings Road, Chelsea <a href="https://goo.gl/maps/gdUWNCcmxRxJY194A" title="google map">Location</a></p>
+                <hr>
+                <p><span>6:30pm - Wedding Breakfast</span><br>We'll be sharing menu choices in due course</p>
+                <hr>
+                <p><span>8pm - Hit the Dancefloor</span><br>P-A-R-T-Y</p>
+                <hr>
+                <p><span>11:30pm - C'est Fini</span><br>Thank you and goodnight</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item__image scheduleimg"></div>
+        </div>
+
+        <div class="swiper-slide carousel-item">
+          <div class="carousel-item__info">
+            <div class="carousel-item__container">
+              <h2 class="carousel-item__subtitle">4. Gifts</h2>
+              <h1 class="carousel-item__title">Registry</h1>
+              <p class="carousel-item__description">The most important thing is for you to be with us on our special day.<br>If, however, you would like to give us a gift, we'd love a small contribution towards our honeymoon on:</p>
+              <a href="https://prezola.com/wishlists/10267555/" class="custom-btn btn-14">EMILY & FRASER'S GIFTLIST</a>
+            </div>
+          </div>
+          <div class="carousel-item__image giftimg"></div>
+        </div>
+      </div>
+
+      <div class="carousel__nav">
+        <div class="swiper-button-prev carousel__icon"></div>
+        <div class="swiper-button-next carousel__icon"></div>
+      </div>
+
+      <div class="pagination-wrapper">
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script  src="/script.js"></script>
 
 </body>
