@@ -38,11 +38,11 @@
               <form id="contact" action="" method="post" class="carousel-item__description rsvp-description" netlify>
                 <fieldset>
                   <div class="form-names">
-                    <label for="">Name</label>
-                    <input placeholder="Your name" type="text" tabindex="1" required>
+                    <label for="firstperson">Name</label>
+                    <input placeholder="Your name" type="text" name="firstperson" id="firstperson" tabindex="1" required>
                     <br>
-                    <label for="">Name</label>
-                    <input placeholder="Additional name" type="text" tabindex="2" required>
+                    <label for="secondperson">Name</label>
+                    <input placeholder="Additional name" type="text" name="secondperson" id="secondperson" tabindex="2">
                   </div>
                   <div class="form-radio">
                     <label for="radio-container" class="question">Will you be attending?</label>
@@ -57,11 +57,11 @@
                   </div>
                   
                   <div class="form-extras">
-                    <label for="">Email</label>
-                    <input placeholder="Your Email Address" type="email" tabindex="3" required>
+                    <label for="emailaddress">Email</label>
+                    <input placeholder="Your Email Address" type="email" name="emailaddress" id="emailaddress" tabindex="3" required>
                     <div class="comments">
-                      <label for="">Optional</label>
-                      <textarea placeholder="Dietary requirements or questions?" tabindex="4" required></textarea>
+                      <label for="optionalcomments">Optional</label>
+                      <textarea placeholder="Dietary requirements or questions?" name="optionalcomments" id="optionalcomments" tabindex="4"></textarea>
                     </div>
                   </div>
                   <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" class="rsvp-btn custom-btn btn-14">SUBMIT</button>
