@@ -153,8 +153,9 @@ body {
   position: absolute;
   top: 2%;
   right: 10%;
-  color: #2c2c2c98;
+  color: #2c2c2cb2;
   font-family: "Playfair Display", serif;
+  font-size: 15px;
 }
 
 @media (min-width: 650px) {
