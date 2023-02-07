@@ -149,6 +149,19 @@ body {
   text-decoration: none;
 }
 
+.initials {
+  position: absolute;
+  top: 2%;
+  right: 10%;
+  color: #2c2c2c27;
+}
+
+@media (min-width: 650px) {
+  .initials {
+    display: none;
+  }
+}
+
 .container1 a {
   color: #2c2c2c;
   font-family: "Open Sans", sans-serif;
