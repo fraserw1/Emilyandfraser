@@ -88,11 +88,6 @@ body {
   }
 }
 
-.carouse-item__container {
-  height: 100%;
-  width: 100%;
-}
-
 .carousel-item__subtitle {
   font-family: "Open Sans", sans-serif;
   letter-spacing: 3px;
@@ -160,7 +155,7 @@ body {
 
 @media (min-width: 650px) {
   .initials {
-    display: none;
+    right: auto;
   }
 }
 
@@ -179,13 +174,36 @@ aside {
   display: none;
 }
 
-.hide {
+.reveal {
   display: none;
+}
+
+.menu2 {
+  animation: fade-out 1000ms forwards;
 }
 
 .menu-open {
   display: block;
   width: 100%;
+  animation: fade-in 1000ms forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 input,
